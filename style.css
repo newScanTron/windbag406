@@ -1,11 +1,13 @@
-a {
+#nav a {
    text-decoration: none;
-   color: #dddddd;
+   color: #bbbbbb;
+}
+a:hover {
+   cursor: pointer !important;
 }
 body {
-
    margin: 0px auto 50px auto;
-   font-family: helvetica;
+   font-family: fantasy;
    text-align: center;
 }
 img {
@@ -15,23 +17,62 @@ img {
 footer {
    margin-top: 50px;
 }
+#imageThing,
+#favoritesImage,
+#soupSaladImage,
+#sandwichesImage,
+#wingsImage,
+#burgersImage,
+#macImage {
+   background-image: url("images/backwall.png");
+   background-position: top;
+   background-size: 100% auto;
+   height: 300px;
+   display: block;
+   margin-top: 30px;
+}
+#imageThing {
+      margin-top: 0px;
+      background-size: 100% auto;
+   min-height: 300px;
+}
+#favoritesImage {
+   background-image: url("images/food/fishtaco.jpg");
+}
+#soupSaladImage {
+   background-image: url("images/food/tunasandwitch.jpg");
+   background-position: center;
+}
+#sandwichesImage {
+   background-image: url("images/food/brisketsand.jpg");
+   background-position: center;
+}
+#wingsImage {
+   background-image: url("images/food/wings.jpg");
+   background-position: center;
+   height: 400px;
+}
+#burgersImage {
+   background-image: url("images/food/blackblueburger.jpg");
+   background-position: center;
+}
+#macImage {
+   background-image: url("images/food/macburger.jpg");
+   background-position: center;
+}
 .contentDiv {
 
 }
 #content {
    max-width: 100%;
-   padding: 30px 0px 40px 0px;
+   padding: 40px 20px 40px 20px;
    margin: auto;
 }
-#content > div {
-   display: inline-block;
-   vertical-align: top;
-   padding: 10px;
-}
+
 
 #info {
-   text-align: left;
-   width: 25%;
+   /*text-align: left;
+   width: 25%;*/
 }
 #info > p {
    width: 100%;
@@ -39,36 +80,91 @@ footer {
    padding-right: 10px;
    vertical-align: top;
    text-align: left;
+   font-size: 24px;
 }
 .MenuItem {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
    text-align: center;
-
+   /*background-color: rgba(35, 30, 40, 0.25);*/
+   position: relative;
+}
+#starters .MenuItem {
+   min-height: 200px;
+}
+#starters .MenuItem.Top {
+   min-height: 293px;
+}
+#favorites .MenuItem {
+   min-height: 280px;
+}
+#soupSalad .MenuItem {
+   min-height: 220px;
+}
+#sandwiches .MenuItem {
+   min-height: 193px;
+}
+#wings .MenuItem {
+   min-height: 140px;
+}
+#burgers .MenuItem {
+   min-height: 180px;
+}
+#mac .MenuItem {
+   min-height: 158px;
+}
+.MenuItem > h4,
+.MenuItem > p {
+   /*background-color: rgba(55, 55, 55, 0.5);
+   border-radius: 5px;*/
 }
 .MenuItem > h4 {
-   margin-top: 30px;
-   margin-bottom: 10px;
+   margin-top: 0px;
+   height: 38px;
+}
+.MenuItem > h2 > small {
+   display: block;
+}
+.MenuItem > p {
+   text-align: left;
+   font-size: 18px;
+   padding: 5px;
+}
+.MenuItem > b {
+   text-align: center;
+   padding-bottom: 20px;
+   position: absolute;
+   bottom: 5px;
+}
+#menuContent > h1 {
+   font-size: 48px;
+   line-height: 48px;
+   margin-top: 50px;
+   margin-bottom: 20px;
 }
 #menuContent > div {
-   margin-top: 50px;
+   margin-top: 10px;
+   margin-left: 2%;
+   margin-right: 2%;
 }
-#menuContent p {
-   width: 80%;
-   margin: auto;
 
+#menuContent i {
+   display: block;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
 }
-#menuContent  p > b {
+#menuContent   > b {
    display: block;
 }
 
 #menuContent {
-   /*width: 65%;*/
+
    height: auto;
-      background-image: url("images/backwall.png");
-   background-position: center;
-   background-size: cover;
 }
 #nav {
-
+   background-color: white;
    max-width: 100%;
    height: 200px;
    text-align: right;
@@ -82,7 +178,14 @@ footer {
     padding: 5px;
     left: 10px;
 }
-#nav > div {
+#nav #addressContent {
+   position: absolute;
+   bottom: 10px;
+   left: 300px;
+   text-align: left;
+   font-size: 24px;
+}
+#nav > #navTabs {
    position: absolute;
    bottom: 0px;
    right: 10px;
@@ -100,8 +203,43 @@ footer {
    cursor: pointer;
    vertical-align: baseline;
 }
-@media (max-width: 960px) {
-   #content {
-      width: 100%;
+/* individual meue item styles */
+#nachos {
+   min-height: 330px !important;
+}
+#nachos > p {
+   text-align: center;
+}
+@media (max-width: 991px) {
+   #starters .MenuItem  {
+      min-height: 190px;
+   }
+   #favorites .MenuItem {
+      min-height: 210px;
+   }
+   #soupSalad .MenuItem {
+      min-height: 220px;
+   }
+   #sandwiches .MenuItem {
+      min-height: 193px;
+   }
+   #wings .MenuItem {
+      min-height: 105px;
+   }
+   #burgers .MenuItem {
+      min-height: 180px;
+   }
+   #mac .MenuItem {
+      min-height: 158px;
+   }
+   #protein {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media (max-width: 768px) {
+   .MenuItem {
+      min-height: 0px !important;
    }
 }

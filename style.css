@@ -1,0 +1,107 @@
+a {
+   text-decoration: none;
+   color: #dddddd;
+}
+body {
+
+   margin: 0px auto 50px auto;
+   font-family: helvetica;
+   text-align: center;
+}
+img {
+   width: auto;
+   height: auto;
+}
+footer {
+   margin-top: 50px;
+}
+.contentDiv {
+
+}
+#content {
+   max-width: 100%;
+   padding: 30px 0px 40px 0px;
+   margin: auto;
+}
+#content > div {
+   display: inline-block;
+   vertical-align: top;
+   padding: 10px;
+}
+
+#info {
+   text-align: left;
+   width: 25%;
+}
+#info > p {
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+   vertical-align: top;
+   text-align: left;
+}
+.MenuItem {
+   text-align: center;
+
+}
+.MenuItem > h4 {
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+#menuContent > div {
+   margin-top: 50px;
+}
+#menuContent p {
+   width: 80%;
+   margin: auto;
+
+}
+#menuContent  p > b {
+   display: block;
+}
+
+#menuContent {
+   /*width: 65%;*/
+   height: auto;
+      background-image: url("images/backwall.png");
+   background-position: center;
+   background-size: cover;
+}
+#nav {
+
+   max-width: 100%;
+   height: 200px;
+   text-align: right;
+   padding-left: 10%;
+   position: relative;
+}
+#nav #logo {
+   position: absolute;
+   width: 300px;
+    height: auto;
+    padding: 5px;
+    left: 10px;
+}
+#nav > div {
+   position: absolute;
+   bottom: 0px;
+   right: 10px;
+
+   width: 100%;
+}
+#nav > div > div {
+   line-height: 24px;
+   font-size: 18px;
+   height: 50px;
+   background-color: rgba(55, 55, 55, 0.7);
+   display: inline-block;
+   padding: 20px;
+   color: #dddddd;
+   cursor: pointer;
+   vertical-align: baseline;
+}
+@media (max-width: 960px) {
+   #content {
+      width: 100%;
+   }
+}

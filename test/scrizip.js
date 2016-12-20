@@ -1,11 +1,19 @@
 function bodyLoad() {
 	//document.getElementById("menuContent").style.display = "none";
-	var kids = document.getElementsByClassName("contentDiv");
-	for (var i = 0; i < kids.length; ++i) {
-	  var item = kids[i];
+	// var kids = document.getElementsByClassName("contentDiv");
+	// for (var i = 0; i < kids.length; ++i) {
+	//   var item = kids[i];
+   //
+	//   item.style.display = "none";
+	// }
+   $('#imageThing').parallax();
+   $('#favoritesImage').parallax();
+   $('#soupSaladImage').parallax();
+   $('#sandwichesImage').parallax();
+   $('#wingsImage').parallax();
+   $('#burgersImage').parallax();
+   $('#macImage').parallax();
 
-	  item.style.display = "none";
-	}
 }
 
 

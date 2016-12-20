@@ -12,19 +12,19 @@
   <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="/js/jquery-3.1.1.js"></script>
+  <script src="/js/parallax.js"></script>
   <script src="scrizip.js"></script>
 
 </head>
 
-<body>
-
+<body onload="bodyLoad();">
+   <div id="facebookLink">
+      <p>Check Us Out On <strong>Facebook</strong> For Our <strong>Daily Specials and Upcoming Events. </strong>Click Here!</p>
+   </div>
    <div id="nav">
       <img src="../images/logo.png" id="logo" style="">
-      <span id="addressContent" class="" >
-         19 s Last Chance Gultch<br>
-         Helena, Mt.<br>
-         <a href="tel:4064433520">406.443.3520</a>
-      </span>
+
       <div>
          <div id="address" href="#menu">
             Contact Us
@@ -34,34 +34,18 @@
          </div>
       </div>
    </div>
-   <span id="imageThing">
 
-   </span>
+   <div class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/backwall.jpg" id="imageThing">
+      <div id="nameTitle">
+         <h2>WINDBAG SALOON</h2>
+         <div id="addressContent" class="">
+            19 s Last Chance Gultch<br>
+            Helena, Mt.<br>
+            <a href="tel:4064433520">406.443.3520</a>
+         </div>
+      </div>
+   </div>
    <div id="content">
-    <!--   <div id="info">
-           <p>
-              Built in 1882 and listed in the National Register of Historical Places, this “Italianate” style building is part of the St. Louis Block in downtown Helena, Montana. This location has traditionally been a focal point of night life in the area. Prior to the Windbag Saloon, which opened in 1977, establishments such as a burlesque hall, movie theatre, and a bowling alley called this location home.
-           </p>
-            <p>
-               This iconic building is best remembered as one of Montana’s longest functioning brothels. It is also the subject of a great deal of local lore and legend. Rumors include ghost sightings, illegal gold mines, and philandering politicians.
-            </p>
-            <p>
-               This infamous past began in 1927 when Ida Levy opened her “furnished rooms” on the second floor to cater to amorous local men. Levy opened the Silver Dollar Bar in the space occupied by the Windbag shortly thereafter.
-            </p>
-            <p>
-               Following Ida Levy’s retirement, Dorothy Putnam (known locally as “Big Dorothy”) took over as madam in 1954.
-            </p>
-            <p>
-               Dorothy’s keen business sense and colorful personality kept her operation in good graces and endeared her to the local community. She catered to many powerful individuals, including state legislators, and she donated generously to many charitable causes.
-            </p>
-            <p>
-               Dorothy’s remained in business until the brothel was raided on April 17, 1973 on the orders of the Lewis and Clark County Attorney, Thomas F. Dowling. The closure of such a popular establishment was met with a considerable public outcry. “Dorothy’s Rooms” were the last, in a long line of brothels to call the Helena’s red light district home.
-            </p>
-            <p>
-               Following in the footsteps of many of Lewis and Clark County’s finest, we invite you to join in the tradition of great service, great food, and great people, here at the Windbag Saloon &amp; Grill.
-            </p>
-        </div> 
--->
       <div id="menuContent" class="contentDiv">
          <h1>Starters</h1>
          <div id="starters">
@@ -174,7 +158,7 @@
             </div> <!-- end row 4 -->
          </div> <!--end of starters -->
 
-         <span id="favoritesImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/fishtaco.jpg" class="favoritesImage"></span>
          <h1>BIG DOROTHY’S FAVORITES</h1>
          <div id="favorites">
             <div class="row">
@@ -237,11 +221,10 @@
                         Add $1 for each additional side.
                      </p>
                   </div>
-               </div>
             </div> <!-- end of row -->
          </div> <!-- end of favorites -->
 
-         <span id="soupSaladImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/tunasandwitch.jpg" id="soupSaladImage" class="imageThing"></span>
          <h1>SOUPS &amp; SALADS</h1>
          <div id="soupSalad">
             <p>
@@ -289,7 +272,7 @@
             </div>
          </div> <!-- end salads -->
 
-         <span id="sandwichesImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/brisketsand.jpg" id="sandwichesImage" class="imageThing"></span>
          <h1>SANDWICHES</h1>
          <div id="sandwiches">
             <i>
@@ -371,7 +354,7 @@
             </div> <!-- end of row -->
          </div> <!-- end of sandwitches -->
 
-         <span id="wingsImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/wings.jpg" id="wingsImage" class="imageThing"></span>
          <h1>WINGS</h1>
          <div id="wings">
             <i>
@@ -435,7 +418,7 @@
             </div> <!-- end of wingsRow -->
          </div> <!--end of wings-->
 
-         <span id="burgersImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/blackblueburger.jpg" id="burgersImage" class="imageThing"></span>
          <h1>FRESH BURGERS</h1>
          <div id="burgers">
             <i>
@@ -537,7 +520,7 @@
             </div> <!-- end of burgers row -->
          </div> <!-- end of burgers -->
 
-         <span id="macImage"></span>
+         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/macburger.jpg" id="macImage" class="imageThing"></span>
          <h1>PUB MAC &amp; CHEESE</h1>
          <div id="mac">
             <small>

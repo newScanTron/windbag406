@@ -18,6 +18,13 @@ img {
 footer {
    margin-top: 50px;
 }
+#aboutUs {
+   padding-top: 20px;
+}
+#aboutUs > div {
+     margin-left: 2%;
+   margin-right: 2%;  
+}
 #imageThing,
 #favoritesImage,
 #soupSaladImage,
@@ -178,9 +185,19 @@ footer {
    height: auto;
 }
 #facebookLink {
-   padding: 9px ;
+   padding: 10px;
    background-color: black;
    color: white;
+   font-weight: 100;
+}
+#facebookLink > a > p {
+      margin: 0px;
+}
+#facebookLink > a {
+      text-decoration: none;
+      color: white;
+      padding: 0px;
+      margin: 0px;
 }
 #nav {
    background-color: white;
@@ -216,10 +233,10 @@ footer {
    line-height: 24px;
    font-size: 18px;
    height: 50px;
-   background-color: rgba(55, 55, 55, 0.7);
+
    display: inline-block;
    padding: 20px;
-   color: #dddddd;
+   color: #222222;
    cursor: pointer;
    vertical-align: baseline;
 }

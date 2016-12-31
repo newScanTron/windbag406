@@ -2,22 +2,24 @@
 <html>
 
 <head>
-       <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta content="The Windbag Saloon, is a Long time Helena establishment specilizing in Food and Drink." name="description">
-    <meta content="noodp" name="robots">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="author" content="Chris Murphy">
 
-  <title>Windbag Saloon</title>
-  <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="/js/jquery-3.1.1.js"></script>
-  <script src="/js/parallax.js"></script>
-  <script src="scrizip.js"></script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="The Windbag Saloon, is a Long time Helena establishment specilizing in Food and Drink." >
+   <meta content="noodp" name="robots">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="author" content="Chris Murphy">
+   <title>Windbag Saloon</title>
+   <!--style-->
+   <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
+   <link rel="stylesheet" type="text/css" href="bootstrap.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!--Scrips-->
+   <script src="/js/jquery-3.1.1.js"></script>
+   <script src="/js/parallax.js"></script>
+   <script src="scrizip.js"></script>
 
 </head>
 
@@ -28,14 +30,14 @@
       </a>
    </div>
    <div id="nav">
-      <img src="../images/logo.png" id="logo" style="">
+      <img src="../images/logo.png" id="logo" >
 
       <div>
          <div id="address" href="#menu">
             Contact Us
          </div>
          <div id="menu" >
-            Menu
+            <a href="#menuContent">Menu</a>
          </div>
       </div>
    </div>
@@ -51,236 +53,266 @@
       </div>
    </div>
    <div id="content">
-      <div id="aboutUs" class="contentDiv">
+      <div id="aboutUs" >
             <div class="row">
-                  <h2 style="margin-bottom: 20px; ">THE WINDBAG SALOON</h2>
-                  <div class="col-sm-8 col-md-8">
-                     <img src="../images/signcolor.jpg" style="width: 75%;">
+                  <h1 id="title">THE WINDBAG SALOON</h1>
+                  <div class="col-sm-12 col-md-12 col-lg-8">
+                     <img src="../images/signcolor.jpg" style="width: 100%; height: 400px; overflow">
                   </div>
-                  <div class="col-sm-4 col-md-4" style="text-align: left;">
-                        <h3 style="text-align: center;">
-                              A HELENA CLASSIC <br>
+                  <div class="col-sm-12 col-md-12 col-lg-4" style="text-align: left;">
+                        <h3 style="">
+                              A HELENA CLASSIC
                               REVISITED
                         </h3>
-                        <p>
-                      Following in the footsteps of many of Lewis and Clark County’s finest, we invite you to join in the tradition of great service, great food, and great people, here at the Windbag
-      Saloon and Grill.
+                        <br>
+                        <p style="font-size:18px;">
+                      Follow in the footsteps of many of Lewis and Clark County’s finest, we invite you to join in the tradition of great service, great food, and great people, here at the Windbag Saloon and Grill.
                         </p>
                   </div>
             </div>
+            <br><br>
+      </div>
+      <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/tunasandwitch.jpg" id="soupSaladImage" class="imageThing">
+      <div id="menuTitle"><p>MENU - <small>served till 11:00pm daily.</small></p></div></span>
+      <div id="mobileNavBar">
+
       </div>
       <div id="menuContent" class="contentDiv">
-         <h1>Starters</h1>
-         <div id="starters">
+         <a href="#startersTitle"><h1 data-id="starters" onclick="show(this);" id="startersTitle">STARTERS</h1></a>
+         <div id="starters" class="MenuCat">
             <div class="row" id="startsRow1">
                <div class="MenuItem col-md-4 col-sm-6" id="nachos">
-                  <h4>BIG DOROTHY’S <br>
+                  <h4>BIG DOROTHY’S <b>10.99</b><br>
                      SIGNATURE NACHOS
                   </h4>
-                  <p>
+
+                  <p style="margin-bottom: 0px;" class="SmallText">
                      Your choice of chicken, bacon, or beef on top of house made chips topped with onions, black beans, tomatoes, olives, shredded cheddar and our soon to be famous cheese sauce.
+                     <i>Add Jalapeños for 75¢. Sub Brisket 1.75</i>
                   </p>
-                  <i>Add Jalapeños for 75¢. Sub Brisket 1.75</i>
-                  <b>
-                     10.99
-                  </b>
+
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BROTHEL BITES</h4>
+                  <h4>BROTHEL BITES
+                     <b >
+                        8.99
+                     </b></h4>
                   <p>
                      Our own house-made enchiladas sliced into bites, deep-fried &amp; served with our enchilada sauce, sour cream, &amp; salsa.
                   </p>
-                  <b>
-                     8.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>SWEET FRIES</h4>
+                  <h4>SWEET FRIES
+                     <b >
+                        5.99
+                     </b></h4>
                   <p>
                      Seasoned sweet fries with roasted red pepper aioli.
                   </p>
-                  <b>
-                     5.99
-                  </b>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>GIGANTIC PRETZEL</h4>
+                  <h4>GIGANTIC PRETZEL
+                     <b >
+                        12.99
+                     </b></h4>
                   <p>
                      A pretzel the size of a large pizza! Served with a variety of mustards &amp; our cheese sauce.
                   </p>
-                  <b>
-                     12.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>FILIBUSTER FRIES</h4>
+                  <h4>FILIBUSTER FRIES
+                     <b >
+                        5.99
+                     </b></h4>
                   <p>
                      Our house fries topped with our secret garlic fire seasoning.
                   </p>
-                  <b>
-                     5.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
                   <h4>
-                     JAMESON BBQ BACON<br>
+                     JAMESON BBQ BACON<b>5.99</b><br>
                      WRAPPED SHRIMP
+
                   </h4>
                   <p>
                      Seasoned sweet fries with roasted red pepper aioli.
                   </p>
-                  <b>
-                     5.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>CHIPS &amp; CHEESE</h4>
+                  <h4>CHIPS &amp; CHEESE
+                     <b >
+                        5.99
+                     </b></h4>
                   <p>
                      House-made tortilla chips served with our signature cheese sauce.
                   </p>
-                  <b>
-                     5.99
-                  </b>
-               </div>
 
-               <div class="MenuItem col-md-4 col-sm-12">
-                  <h4>COCKTAIL PASTY PLATTER</h4>
-                  <p>
-                     Three of our house-made Beef Wellington pasties served with Guinness Stout Gravy, &amp; three of our signature corned beef hash pasties served with our Jameson Black Barrel Hollandaise sauce.
-                  </p>
-                  <b>
-                     9.99
-                  </b>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>SPICY PUB PICKLES</h4>
+                  <h4>COCKTAIL PASTY PLATTER
+                     <b >
+                        9.99
+                     </b></h4>
+                  <p class="SmallText">
+                     Three of our house-made Beef Wellington pasties served with Guinness Stout Gravy, &amp; three of our signature corned beef hash pasties served with our Jameson Black Barrel Hollandaise sauce.
+                  </p>
+
+               </div>
+
+               <div class="MenuItem col-md-4 col-sm-6">
+                  <h4>SPICY PUB PICKLES
+                     <b >
+                        6.99
+                     </b></h4>
                   <p>
                      Crisp dill pickles with a dash of zesty spices dipped in beer batter &amp; fried. Served with Jameson Black Barrel Mustard &amp; honey mustard.
                   </p>
-                  <b>
-                     6.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BLACKFOOT RIVER CHEESE CURDS</h4>
+                  <h4>
+                     BLACKFOOT RIVER<b>5.99</b><br>
+                      CHEESE CURDS
+
+                  </h4>
                   <p>
                      Wisconsin sharp cheddar cheese curds fried in Blackfoot River Amber &amp; served with ranch.
                   </p>
-                  <b>
-                     5.99
-                  </b>
+
                </div>
             </div> <!-- end row 4 -->
          </div> <!--end of starters -->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/fishtaco.jpg" class="favoritesImage"></span>
-         <h1>BIG DOROTHY’S FAVORITES</h1>
-         <div id="favorites">
+         <a href="#FavoritesTitle"><h1 data-id="favorites" onclick="show(this);" id="FavoritesTitle">BIG DOROTHY’S FAVORITES</h1></a>
+         <div id="favorites" class="MenuCat">
             <div class="row">
 
                <div class="MenuItem Top col-md-4 col-sm-6">
-                  <h4>CHICKEN ENCHILADA</h4>
+                  <h4>CHICKEN ENCHILADA
+                     <b>
+                        9.99
+                     </b>
+                  </h4>
                   <p>
                      Chicken &amp; green chilies rolled in a  our tortilla covered in a blend of cheeses &amp; enchilada sauce. Served with chip strips, shredded lettuce, tomatoes, olives, red salsa &amp; sour cream.
                   </p>
-                  <b>
-                     9.99
-                  </b>
+
                </div>
 
                <div class="MenuItem Top col-md-4 col-sm-6">
-                  <h4>CHICKEN STRIP PLATTER</h4>
+                  <h4>CHICKEN STRIP PLATTER
+                     <b>
+                        9.99
+                     </b>
+                  </h4>
                   <p>
                      Strips of chicken tenderloins with light,  aking breading served with coleslaw and your choice of side.
                   </p>
-                  <b>
-                     9.99
-                  </b>
+
                </div>
 
                <div class="MenuItem Top col-md-4 col-sm-6">
                   <h4>
-                     BLACKFOOT RIVER<br>
+                     BLACKFOOT RIVER   <b>5.99</b><br>
                      FISH &amp; CHIPS
+
                   </h4>
                   <p>
                      12 oz. of cod dipped in our house-made Blackfoot River Amber Beer Batter,  red &amp; served with our tartar sauce, coleslaw, &amp; your choice of side.
                   </p>
-                  <b>
-                     5.99
-                  </b>
+
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>JIMMY THE GREEK’S GYRO</h4>
+                  <h4>JIMMY THE GREEK’S GYRO
+                     <b>
+                        10.49
+                     </b></h4>
                   <p>
                      A warm pita topped with seasoned beef, lettuce, tzatziki sauce, tomatoes, &amp; feta cheese. Served with your choice of side.
                   </p>
-                  <b>
-                     10.49
-                  </b>
-               </div>
-               <div class="MenuItem col-md-8 col-sm-12">
-                  <h2>PROTEIN POWER<br><small> A fully customizable low-carb meal.</small></h2>
-                  <h4>PICK YOUR PROTEIN</h4>
 
-                     <p style="display: inline-block; width: 30%; text-align: left; vertical-align: top;">
-                        Italian Chicken Breast 9.99<br>
-                        Certified Angus Beef Patty 9.99<br>
-                        Pesto Tuna Fillet 11.99<br>
-                        Blackened Tuna Fillet 11.99<br>
-                        Black Bean Patty 9.99<br>
-                     </p>
-                     <p style=" display: inline-block; width: 30%; text-align: left; vertical-align: top;">
-                        Two of the following sides are included with your protein. A low-carb salad, seasonal mixed vegetables , cottage cheese, celery or soup.<br>
-                        Add $1 for each additional side.
-                     </p>
+               </div>
+               <div class="MenuItem col-md-8 col-sm-12 " id="proteinPower">
+                  <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                     <span>
+                     <h2>PROTEIN POWER<br><small> A fully customizable low-carb meal.</small></h2>
+
+                     </span>
+                  </div>
+
+                        <p class="col-md-4 col-sm-4" style="display: inline-block;text-align: left; vertical-align: top;">
+                           <span style="font-size:20px; white-space: nowrap;">PICK YOUR PROTEIN</span><br>
+                           Italian Chicken Breast 9.99<br>
+                           Certified Angus Beef Patty 9.99<br>
+                           Pesto Tuna Fillet 11.99<br>
+                           Blackened Tuna Fillet 11.99<br>
+                           Black Bean Patty 9.99<br>
+                        </p>
+                        <p class="col-md-8 col-sm-8" style=" display: inline-block; text-align: left; vertical-align: bottom;">
+                           <span style="font-size:24px;"><br></span>
+                           Two of the following sides are included with your protein. A low-carb salad, seasonal mixed vegetables , cottage cheese, celery or soup.<br>
+                           Add $1 for each additional side.
+                        </p>
+                     </div>
                   </div>
             </div> <!-- end of row -->
          </div> <!-- end of favorites -->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/tunasandwitch.jpg" id="soupSaladImage" class="imageThing"></span>
-         <h1>SOUPS &amp; SALADS</h1>
-         <div id="soupSalad">
+
+         <a href="#soupSaladTitle"><h1 data-id="soupSalad" onclick="show(this);" id="soupSaladTitle">SOUPS &amp; SALADS</h1></a>
+         <div id="soupSalad" class="MenuCat">
             <p>
                HOUSE-MADE SOUP 2.49 CUP. 3.99 BOWL
             </p>
             <div class="row">
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>HOUSE SALAD</h4>
-                  <p>
-                     Mixed green, tomatoes, cucumbers, carrots, &amp; your choice of dressing. Add grilled or crispy chicken for 2.99. Add tuna 4.95. Served with a dinner roll.
+                  <h4>HOUSE SALAD
                      <b>
                         SM 3.99 LG 6.99
                      </b>
+                  </h4>
+                  <p>
+                     Mixed green, tomatoes, cucumbers, carrots, &amp; your choice of dressing. Add grilled or crispy chicken for 2.99. Add tuna 4.95. Served with a dinner roll.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>THE GREEK ISLE</h4>
-                  <p>
-                     Your choice of gyro meat or grilled chicken on a bed of romaine lettuce topped with Kalamata olives, red onions, cucumbers, tomatoes, &amp; feta crumbles. Served with feta vinaigrette &amp; pita bread.
+                  <h4>THE GREEK ISLE
                      <b>
                         10.99
                      </b>
+                  </h4>
+                  <p>
+                     Your choice of gyro meat or grilled chicken on a bed of romaine lettuce topped with Kalamata olives, red onions, cucumbers, tomatoes, &amp; feta crumbles. Served with feta vinaigrette &amp; pita bread.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>CAESAR SALAD</h4>
-                  <p>
-                     Crisp romaine lettuce with red onions, croutons, parmesan cheese, &amp; our house-made Caesar. Add grilled or crispy chicken for 2.99. Add tuna 4.95. Served with a dinner roll.
+                  <h4>CAESAR SALAD
                      <b>
                         SM 3.99 LG 6.99
                      </b>
+                  </h4>
+                  <p>
+                     Crisp romaine lettuce with red onions, croutons, parmesan cheese, &amp; our house-made Caesar. Add grilled or crispy chicken for 2.99. Add tuna 4.95. Served with a dinner roll.
+
                   </p>
                </div>
 
@@ -289,97 +321,104 @@
                      SALAD DRESSINGS
                   </h4>
                   <p>
-                     Ranch, Bleu Cheese, French, Oil &amp; Vinegar, 1000 Island, Balsamic Vinaigrette, Italian, Oriental, Feta Vinaigrette, or Poppy Seed Vinaigrette.£3
+                     Ranch, Bleu Cheese, French, Oil &amp; Vinegar, 1000 Island, Balsamic Vinaigrette, Italian, Oriental, Feta Vinaigrette, or Poppy Seed Vinaigrette.
                   </p>
                </div>
-            </div>
+            </div> <!-- end of row -->
          </div> <!-- end salads -->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/brisketsand.jpg" id="sandwichesImage" class="imageThing"></span>
-         <h1>SANDWICHES</h1>
-         <div id="sandwiches">
+         <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/brisketsand.jpg" id="sandwichesImage" class="imageThing"></span> -->
+         <a href="#sandwichesTitle" ><h1 data-id="sandwiches" onclick="show(this);" id="sandwichesTitle">SANDWICHES</h1></a>
+         <div id="sandwiches" class="MenuCat">
             <i>
                Served with fries, chips, or soup. Add sweet or Filibuster for an additional 59¢ Add a pretzel bun for 75¢. Start out with a house salad for only $1.99
             </i>
             <div class="row" id="sandwichesRow">
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>FRENCH DIP</h4>
-                  <p>
-                     Thinly sliced roast beef with melted Swiss on a Park Avenue demi baguette served with au jus.
+                  <h4>FRENCH DIP
                      <b>
                         8.99 <small>Double roast beef for 1.99</small>
                      </b>
+                  </h4>
+                  <p>
+                     Thinly sliced roast beef with melted Swiss on a Park Avenue demi baguette served with au jus.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>REUBEN</h4>
-                  <p>
-                     Thinly sliced corned beef, Swiss cheese, &amp; sauerkraut on your choice of wheat, sourdough, or rye. Served with 1000 Island.
+                  <h4>REUBEN
                      <b>
                         9.49
                      </b>
+                  </h4>
+                  <p>
+                     Thinly sliced corned beef, Swiss cheese, &amp; sauerkraut on your choice of wheat, sourdough, or rye. Served with 1000 Island.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BLT</h4>
-                  <p>
-                     Bacon, lettuce, &amp; tomato on your choice of wheat, sourdough, or rye with mayo. Add cheddar, Swiss, pepper jack, or mozzarella for 50¢.
+                  <h4>BLT
                      <b>
                         8.99 <small>Double Bacon 1.99</small>
                      </b>
+                  </h4>
+                  <p>
+                     Bacon, lettuce, &amp; tomato on your choice of wheat, sourdough, or rye with mayo. Add cheddar, Swiss, pepper jack, or mozzarella for 50¢.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BUFFALO CHICKEN SANDO</h4>
-                  <p>
-                     Crispy chicken dipped in our buffalo sauce &amp; topped with bleu cheese crumbles. Served on a pretzel bun.
+                  <h4>BUFFALO CHICKEN SANDO
                      <b>
                         10.99
                      </b>
+                  </h4>
+                  <p>
+                     Crispy chicken dipped in our buffalo sauce &amp; topped with bleu cheese crumbles. Served on a pretzel bun.
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>PESTO TUNA</h4>
-                  <p>
-                     A 6oz.  fillet topped with pesto mayo. Served on a fresh Park Avenue bun.
+                  <h4>PESTO TUNA
                      <b>
                         12.99
                      </b>
+                  </h4>
+                  <p>
+                     A 6oz.  fillet topped with pesto mayo. Served on a fresh Park Avenue bun.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
                   <h4>
-                     JAMESON BBQ<br>
+                     JAMESON BBQ<b>12.99</b><br>
                      BEEF BRISKET
                   </h4>
                   <p>
                      Certifed Angus Beef Brisket topped with cole slaw and BBQ sauce. Served on a pretzel bun.
-                     <b>
-                       12.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>PHILLY</h4>
-                  <p>
-                     Thinly sliced roast beef, grilled onions &amp; peppers served on a Park Avenue demi baguette and smothered with our signature cheese sauce.
+                  <h4>PHILLY
                      <b>
                         10.99 <small>Double roast beef for 1.99</small>
                      </b>
+                  </h4>
+                  <p>
+                     Thinly sliced roast beef, grilled onions &amp; peppers served on a Park Avenue demi baguette and smothered with our signature cheese sauce.
                   </p>
                </div>
             </div> <!-- end of row -->
          </div> <!-- end of sandwitches -->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/wings.jpg" id="wingsImage" class="imageThing"></span>
-         <h1>WINGS</h1>
-         <div id="wings">
+         <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/wings.jpg" id="wingsImage" class="imageThing"></span> -->
+         <a href="#wingsTitle"><h1 data-id="wings" onclick="show(this);" id="wingsTitle">WINGS</h1></a>
+         <div id="wings" class="MenuCat">
             <i>
                All wings are served with carrots, celery &amp; your choice of ranch or bleu cheese dressings. Wings are served on a bed of our fresh made chips.
             </i>
@@ -387,43 +426,43 @@
             <i style="font-size: 16px;">BREADED IN BEER, BACON &amp; TABASCO! TOSS YOUR WINGS IN THE FOLLOWING SAUCES:
             </i>
             <div class="row" id="wingsRow">
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>BUFFALO</h4>
                   <p>
                      Traditional buffalo sauce
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>JAMESON BBQ</h4>
                   <p>
                      Jameson Irish Whiskey infused in our house BBQ
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>DRUNKEN CHICKEN</h4>
                   <p>
                      A tangy Asian sauce.
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>JAMESON BLACK <br>
+               <div class="MenuItem col-md-4 col-sm-12">
+                  <h4>JAMESON BLACK <br class="hideMobile">
                      BARREL MUSTARD</h4>
                   <p>
                      House-made mustard sauce infused with our favorite whiskey
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>HABANERO PLUM</h4>
                   <p>
                      A sweet plum sauce with habanero  akes
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>
                      DEATH BY CHICKEN
                   </h4>
@@ -432,7 +471,7 @@
                   </p>
                </div>
 
-               <div class="MenuItem col-md-4 col-sm-6">
+               <div class="MenuItem col-md-4 col-sm-12">
                   <h4>HONEY SOY</h4>
                   <p>
                      A traditional soy sauce infused with honey
@@ -441,198 +480,212 @@
             </div> <!-- end of wingsRow -->
          </div> <!--end of wings-->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/blackblueburger.jpg" id="burgersImage" class="imageThing"></span>
-         <h1>FRESH BURGERS</h1>
-         <div id="burgers">
+         <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/blackblueburger.jpg" id="burgersImage" class="imageThing"></span> -->
+         <a href="#burgersTitle"><h1 data-id="burgers" onclick="show(this);" id="burgersTitle">FRESH BURGERS</h1></a>
+         <div id="burgers" class="MenuCat">
             <i>
                An ALL FRESH 1/2 pound Certified Angus Beef Burgers served on fresh Park Avenue Buns with your choice of fries, soup, potato chips. Add Sweet or Filibuster fries for an additional 59¢. Add a Pretzel Bun for 75¢. Start out with a salad for only 1.99 more.
             </i>
             <div class="row" id="burgersRow">
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>CLASSIC BURGER</h4>
-                  <p>
-                     Add cheddar, Swiss, mozzarella, or pepperjack for 50¢
+                  <h4>CLASSIC BURGER
                      <b>
                         9.99
                      </b>
+                  </h4>
+                  <p>
+                     Add cheddar, Swiss, mozzarella, or pepperjack for 50¢
+
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4> MAC &amp; CHEESE BURGER</h4>
+                  <h4> MAC &amp; CHEESE BURGER
+                     <b>
+                        10.99
+                     </b>
+                  </h4>
                   <p>
                      Topped with bacon chunks &amp; pub mac &amp; cheese.
-                     <b>
-                        10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>RANKIN BACON CHEESE</h4>
+                  <h4>RANKIN BACON CHEESE
+                     <b>
+                        10.99
+                     </b>
+                  </h4>
                   <p>
                      Topped with bacon &amp; cheddar cheese.
-                     <b>
-                        10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BUFFALO CHICKEN SANDO</h4>
+                  <h4>BUFFALO CHICKEN SANDO
+                     <b>
+                        10.99
+                     </b>
+                  </h4>
                   <p>
                      Crispy chicken dipped in our buffalo sauce &amp; topped with bleu cheese crumbles. Served on a pretzel bun.
-                     <b>
-                        10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BULLOCK BURGER</h4>
-                  <p>
-                     Topped with bacon &amp; crumbled bleu cheese.
+                  <h4>BULLOCK BURGER
                      <b>
                         10.99
                      </b>
+                  </h4>
+                  <p>
+                     Topped with bacon &amp; crumbled bleu cheese.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
                   <h4>
-                     ROCKING RACICOT <br>
+                     ROCKING RACICOT<b>
+                       10.99
+                     </b>
+                      <br>
                      BURGER
+
                   </h4>
                   <p>
                      Topped with jalapeños, pepper jack, &amp; sriracha mayo. Served on a pretzel bun.
-                     <b>
-                       10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BLACK BEAN</h4>
-                  <p>
-                     Where’s the beef? Not here. A black bean burger topped with melted pepper jack cheese.
+                  <h4>BLACK BEAN
                      <b>
                         9.99
                      </b>
+                  </h4>
+                  <p>
+                     Where’s the beef? Not here. A black bean burger topped with melted pepper jack cheese.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>GULCH BURGER</h4>
-                  <p>
-                     Topped with Certi ed Angus Beef Brisket, Jameson BBQ sauce, grilled onions, &amp; bleu cheese crumbles.
+                  <h4>GULCH BURGER
                      <b>
                         12.99
                      </b>
+                  </h4>
+                  <p>
+                     Topped with Certi ed Angus Beef Brisket, Jameson BBQ sauce, grilled onions, &amp; bleu cheese crumbles.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>MUSHROOM SWISS BURGER</h4>
-                  <p>
-                     Topped with mushrooms &amp; Swiss.
+                  <h4>MUSHROOM SWISS BURGER
                      <b>
                         10.99
                      </b>
+                  </h4>
+                  <p>
+                     Topped with mushrooms &amp; Swiss.
                   </p>
                </div>
             </div> <!-- end of burgers row -->
          </div> <!-- end of burgers -->
 
-         <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/macburger.jpg" id="macImage" class="imageThing"></span>
-         <h1>PUB MAC &amp; CHEESE</h1>
-         <div id="mac">
-            <small>
+         <a href="#macTitle" ><h1 data-id="mac" onclick="show(this);" id="macTitle">PUB MAC &amp; CHEESE</h1></a>
+         <div id="mac" class="MenuCat">
+            <i><small>
                Start out with a small house salad for 1.99. Add soup, chips, or fries for 1.49. Add sweet or Filibuster fries for 1.99. All Mac &amp; Cheeses are served with a dinner roll.
             </small>
+            </i>
             <div class="row" id ="macRow">
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>CLASSIC</h4>
-                  <p>
-                     Shell pasta smothered in cheese sauce.
+                  <h4>CLASSIC
                      <b>
                         7.49
                      </b>
+                  </h4>
+                  <p>
+                     Shell pasta smothered in cheese sauce.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>ROCKY CRAB MAC</h4>
-                  <p>
-                     Shell pasta smothered in cheese sauce with Rock Crab. Double the crab for 3.99
+                  <h4>ROCKY CRAB MAC
                      <b>
                         11.49
                      </b>
+                  </h4>
+                  <p>
+                     Shell pasta smothered in cheese sauce with Rock Crab. Double the crab for 3.99
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>RANKIN BACON CHEESE</h4>
+                  <h4>RANKIN BACON CHEESE
+                     <b>
+                        10.99
+                     </b>
+                  </h4>
                   <p>
                      Topped with bacon &amp; cheddar cheese.
-                     <b>
-                        10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BLACK FOREST<br>
-                      HAM &amp; BROCCOLI</h4>
-                  <p>
-                     Shell pasta smothered in cheese sauce with black forest ham &amp; broccoli.
+                  <h4>BLACK FOREST
                      <b>
                         9.49
-                     </b>
+                     </b><br>
+                      HAM &amp; BROCCOLI
+
+                   </h4>
+                  <p>
+                     Shell pasta smothered in cheese sauce with black forest ham &amp; broccoli.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>SOUTHERN FRIED <br>
-                     CHICKEN MAC</h4>
+                  <h4>SOUTHERN FRIED <b>10.99</b>
+                  <br>
+                     CHICKEN MAC
+                  </h4>
                   <p>
                      Shell pasta smothered in cheese sauce with fried chicken &amp; bacon.
-                     <b>
-                        10.99
-                     </b>
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
                   <h4>
                      MANSFIELD MAC
-                  </h4>
-                  <p>
-                     Shell pasta smothered in cheese sauce with roasted red peppers, caramelized onions, &amp; sausage.
                      <b>
                        10.99
                      </b>
+                  </h4>
+                  <p>
+                     Shell pasta smothered in cheese sauce with roasted red peppers, caramelized onions, &amp; sausage.
                   </p>
                </div>
 
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>BUFFALO CHICKEN MAC</h4>
-                  <p>
-                     Shell pasta smothered in cheese sauce with buffalo  red chicken &amp; bacon.
+                  <h4>BUFFALO CHICKEN MAC
                      <b>
                         10.99
                      </b>
+                  </h4>
+                  <p>
+                     Shell pasta smothered in cheese sauce with buffalo  red chicken &amp; bacon.
                   </p>
                </div>
             </div>
          </div> <!-- end of mac & cheese -->
 
-         <span id="sweetsImage"></span>
-         <h1>SWEETS</h1>
-         <div id="sweets">
+         <a href="#sweetsTitle"><h1 data-id="sweets" onclick="show(this);" id="sweetsTitle">SWEETS</h1></a>
+         <div id="sweets" class="MenuCat">
 
             <div class="row" id="sweetsRow">
                <div class="MenuItem col-md-4 col-sm-6">
-                  <h4>FUNNEL FRIES 5.99</h4>
+                  <h4>FUNNEL FRIES <b>5.99</b></h4>
                   <p>
                      If your favorite food at the fair is funnel cake this dessert is for you! Funnel cakes cut into fries &amp; topped with a caramel, chocolate drizzle.
                   </p>
@@ -643,8 +696,23 @@
 
     </div>
 
-  <footer>
-    site desing and hosting by <a href="http://www.sonichood.com">SonicHood.com</a>
+  <footer id="">
+     <div id="footerAddress">
+       <h2>WINDBAG SALOON</h2>
+       <div >
+          19 s Last Chance Gultch<br>
+          Helena, Mt.<br>
+          <a href="tel:4064433520">406.443.3520</a><br>
+          Hours of operation:<br>
+          11:00 am &ndash; Close.
+       </div>
+     </div>
+     <div id="map">
+
+     </div>
+     <span>
+       site desing and hosting by <a href="http://www.sonichood.com">SonicHood.com</a>
+    </span>
   </footer>
 </body>
 

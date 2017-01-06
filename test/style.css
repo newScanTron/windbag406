@@ -1,9 +1,14 @@
 #nav a {
    text-decoration: none;
+   color: #000000;
+}
+#nav a:hover {
+   text-decoration: none;
    color: #bbbbbb;
 }
 a:hover {
    cursor: pointer !important;
+   text-decoration: none !important;
 }
 
 body {
@@ -162,10 +167,10 @@ footer > span {
 }
 
 #favorites .MenuItem {
-   min-height: 240px;
+   min-height: 230px;
 }
 #soupSalad .MenuItem {
-   min-height: 220px;
+   min-height: 223px;
 }
 #sandwiches .MenuItem {
    min-height: 193px;
@@ -177,7 +182,7 @@ footer > span {
    min-height: 180px;
 }
 #mac .MenuItem {
-   min-height: 158px;
+   min-height: 164px;
 }
 .MenuItem > h4,
 .MenuItem > p {
@@ -258,10 +263,12 @@ footer > span {
    padding-top: 20px;
    vertical-align: middle;
 }
-#menuTitle  small {
+#menuTitle small {
    font-size: 28px;
    line-height: 18px;
    vertical-align: middle;
+   display: inline-block;
+   padding-bottom: 7px;
 }
 #facebookLink {
    padding: 10px;
@@ -291,7 +298,7 @@ footer > span {
    width: 200px;
     height: auto;
     padding: 5px;
-    left: 10px;
+    left: 40px;
 }
 #nav #addressContent {
    position: absolute;
@@ -304,8 +311,7 @@ footer > span {
 #nav > div {
    position: absolute;
    bottom: 0px;
-   right: 10px;
-
+   right: 40px;
    width: 100%;
 }
 #nav > div > div {
@@ -333,6 +339,12 @@ footer > span {
    padding-left: 10%;
    padding-right: auto;
 }
+@media (max-width: 1080px) {
+   #menuContent > div {
+      margin-left: 40px;
+      margin-right: 40px;
+   }
+}
 @media (max-width: 991px) {
    .hideMobile {
       display: none;
@@ -346,7 +358,7 @@ footer > span {
       margin-right: 40px;
    }
    #menuContent > a > h1 {
-      font-size: 18px;
+      font-size: 22px;
       line-height: 18px;
       margin-top: 0px;
       margin-bottom: 0px;
@@ -361,7 +373,7 @@ footer > span {
       min-height: 210px;
    }
    #soupSalad .MenuItem {
-      min-height: 220px;
+      min-height: 223px;
    }
    #sandwiches .MenuItem {
       min-height: 193px;

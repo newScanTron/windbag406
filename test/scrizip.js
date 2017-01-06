@@ -4,29 +4,35 @@ function bodyLoad() {
    $('#soupSaladImage').parallax();
    $('#wingsImage').parallax();
    if (document.body.clientWidth < 992)
-      hide('none');
+      hideByClass("MenuCat");
 
 }
 window.addEventListener('resize', checkSize);
-var hasHidden = false;
-function hide(displayString) {
-   var displayString = "'" + displayString + "'";
-   console.log(displayString);
-	var kids = document.getElementsByClassName("MenuCat");
+
+function hideByClass(className) {
+	var kids = document.getElementsByClassName(className);
 	for (var i = 0; i < kids.length; ++i) {
 	  var item = kids[i];
-     item.style.display = displayString;
+        item.style.display = "none";
 	}
-   hasHidden = true;
+}
+
+function showByClass(className) {
+	var kids = document.getElementsByClassName(className);
+	for (var i = 0; i < kids.length; ++i) {
+	  var item = kids[i];
+        item.style.display = "block";
+	}
 }
 
 function checkSize() {
-   if (!hasHidden && (document.body.clientWidth < 992)) {
-      hide("none");
+   if (document.body.clientWidth < 992) {
+      hideByClass("MenuCat");
    }
    else {
-      hide("block");
+      showByClass("MenuCat");
    }
+
 }
 
 function show(ele) {
@@ -38,7 +44,7 @@ function show(ele) {
 	  var item = kids[i];
      var styleVar = item.style;
      if (item.id == dataId) {
-         if (styleVar.display == "block") {
+         if (styleVar.display == "block" || !styleVar.display) {
             styleVar.display = "none";
          }
          else {

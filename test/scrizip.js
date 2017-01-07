@@ -1,3 +1,30 @@
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+  var stickyTop = $('#menuContent').offset().top;
+  $(window).on( 'scroll', function(){
+        if ($(window).scrollTop() >= stickyTop) {
+            $('#menuNav').css({position: "fixed", top: "0px"});
+        } else {
+            $('#menuNav').css({position: "relative", top: "0px"});
+        }
+    });
+});
+
+
+
+
 function bodyLoad() {
 
    $('#imageThing').parallax();

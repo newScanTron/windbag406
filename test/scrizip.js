@@ -15,22 +15,22 @@ $(function() {
   var stickyTop = $('#menuContent').offset().top;
   $(window).on( 'scroll', function(){
         if ($(window).scrollTop() >= stickyTop) {
-            $('#menuNav').css({position: "fixed", top: "0px"});
+            $('#menuNav').css({display: "block", top: "0px"});
         } else {
-            $('#menuNav').css({position: "relative", top: "0px"});
+            $('#menuNav').css({display: "none", top: "0px"});
         }
     });
 });
 
 
-
+const seven68 = 768;
 
 function bodyLoad() {
 
    $('#imageThing').parallax();
    $('#soupSaladImage').parallax();
    $('#wingsImage').parallax();
-   if (document.body.clientWidth < 992)
+   if (document.body.clientWidth < seven68)
       hideByClass("MenuCat");
 
 }
@@ -53,7 +53,7 @@ function showByClass(className) {
 }
 
 function checkSize() {
-   if (document.body.clientWidth < 992) {
+   if (document.body.clientWidth < seven68) {
       hideByClass("MenuCat");
    }
    else {
@@ -63,7 +63,7 @@ function checkSize() {
 }
 
 function show(ele) {
-   if (document.body.clientWidth > 992)
+   if (document.body.clientWidth > seven68)
       return;
    var dataId = ele.dataset.id;
    var kids = document.getElementsByClassName("MenuCat");

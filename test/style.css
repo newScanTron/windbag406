@@ -6,9 +6,15 @@
    text-decoration: none;
    color: #bbbbbb;
 }
+
 a:hover {
    cursor: pointer !important;
    text-decoration: none !important;
+}
+
+a {
+   text-decoration: none !important;
+   cursor: pointer !important;
 }
 
 body {
@@ -150,13 +156,34 @@ footer > span {
    vertical-align: top;
    text-align: left;
 }
+#menuNav {
+   display: none;
+   position: fixed;
+   z-index: 100;
+   top: 0px;
+   background-color: rgba(55, 55, 50, 0.75);
+   padding: 10px;
+
+}
+#menuNav a {
+   /*display: block;*/
+   cursor: pointer;
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+}
+
+#menuNav a:not(:last-child)::after {
+   content: " | ";
+}
+
 .MenuItem {
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
    text-align: left;
    /*background-color: rgba(35, 30, 40, 0.25);*/
-   position: relative;
+
 }
 .MenuItem > p > i {
    text-align: left;
@@ -316,7 +343,7 @@ footer > span {
 }
 #nav > div > div {
    line-height: 24px;
-   font-size: 18px;
+   font-size: 22px;
    height: 50px;
 
    display: inline-block;
@@ -346,12 +373,7 @@ footer > span {
    }
 }
 @media (max-width: 991px) {
-   .hideMobile {
-      display: none;
-   }
-   .showMobile {
-      display: block;
-   }
+
    #menuContent > div,
    #aboutUs {
       margin-left: 40px;
@@ -397,6 +419,12 @@ footer > span {
 }
 
 @media (max-width: 768px) {
+   .hideMobile {
+      display: none;
+   }
+   .showMobile {
+      display: block;
+   }
    .MenuItem {
       min-height: 0px !important;
    }

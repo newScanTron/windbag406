@@ -65,6 +65,7 @@ footer > span {
 }
 #aboutUs {
    padding-top: 20px;
+   height: auto;
 
 }
 #aboutUs > div {
@@ -85,6 +86,14 @@ footer > span {
    display: block;
    margin-top: 30px;
 
+}
+
+#imgDiv {
+   background-image: url(/images/signcolor.jpg);
+   height: 400px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
 }
 
 #imageThing {

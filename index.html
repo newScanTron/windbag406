@@ -68,7 +68,6 @@
 
                <div class="col-sm-12 col-md-12 col-lg-7" id="imgDiv">
 
-
                </div>
                <div class="col-sm-12 col-md-12 col-lg-5" style="text-align: left;">
                      <h3 style="">
@@ -218,7 +217,7 @@
             </div> <!-- end row 4 -->
          </div> <!--end of starters -->
 
-         <a href="#favoritesTitle"><h1 data-id="favorites" onclick="show(this);" id="favoritesTitle">BIG DOROTHY’S FAVORITES</h1></a>
+         <a href="#favoritesTitle"><h1 data-id="favorites" id="favoritesTitle">BIG DOROTHY’S FAVORITES</h1></a>
          <div id="favorites" class="MenuCat">
             <div class="row">
 
@@ -296,7 +295,7 @@
          </div> <!-- end of favorites -->
 
 
-         <a href="#soupSaladTitle"><h1 data-id="soupSalad" onclick="show(this);" id="soupSaladTitle">SOUPS &amp; SALADS</h1></a>
+         <a href="#soupSaladTitle"><h1 data-id="soupSalad" id="soupSaladTitle">SOUPS &amp; SALADS</h1></a>
          <div id="soupSalad" class="MenuCat">
             <i>
                HOUSE-MADE SOUP 2.49 CUP. 3.99 BOWL
@@ -350,7 +349,7 @@
          </div> <!-- end salads -->
 
          <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/brisketsand.jpg" id="sandwichesImage" class="imageThing"></span> -->
-         <a href="#sandwichesTitle" ><h1 data-id="sandwiches" onclick="show(this);" id="sandwichesTitle">SANDWICHES</h1></a>
+         <a href="#sandwichesTitle" ><h1 data-id="sandwiches" id="sandwichesTitle">SANDWICHES</h1></a>
          <div id="sandwiches" class="MenuCat">
             <i>
                Served with fries, chips, or soup. Add sweet or Filibuster for an additional 59¢ Add a pretzel bun for 75¢. Start out with a house salad for only $1.99
@@ -441,7 +440,7 @@
          </div> <!-- end of sandwitches -->
 
          <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/wings.jpg" id="wingsImage" class="imageThing"></span> -->
-         <a href="#wingsTitle"><h1 data-id="wings" onclick="show(this);" id="wingsTitle">WINGS</h1></a>
+         <a href="#wingsTitle"><h1 data-id="wings" id="wingsTitle">WINGS</h1></a>
          <div id="wings" class="MenuCat">
             <i>
                All wings are served with carrots, celery &amp; your choice of ranch or bleu cheese dressings. Wings are served on a bed of our fresh made chips.
@@ -505,7 +504,7 @@
          </div> <!--end of wings-->
 
          <!-- <span class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/food/blackblueburger.jpg" id="burgersImage" class="imageThing"></span> -->
-         <a href="#burgersTitle"><h1 data-id="burgers" onclick="show(this);" id="burgersTitle">FRESH BURGERS</h1></a>
+         <a href="#burgersTitle"><h1 data-id="burgers"  id="burgersTitle">FRESH BURGERS</h1></a>
          <div id="burgers" class="MenuCat">
             <i>
                An ALL FRESH 1/2 pound Certified Angus Beef Burgers served on fresh Park Avenue Buns with your choice of fries, soup, potato chips. Add Sweet or Filibuster fries for an additional 59¢. Add a Pretzel Bun for 75¢. Start out with a salad for only 1.99 more.
@@ -616,7 +615,7 @@
             </div> <!-- end of burgers row -->
          </div> <!-- end of burgers -->
 
-         <a href="#macTitle" ><h1 data-id="mac" onclick="show(this);" id="macTitle">PUB MAC &amp; CHEESE</h1></a>
+         <a href="#macTitle" ><h1 data-id="mac" id="macTitle">PUB MAC &amp; CHEESE</h1></a>
          <div id="mac" class="MenuCat">
             <i><small>
                Start out with a small house salad for 1.99. Add soup, chips, or fries for 1.49. Add sweet or Filibuster fries for 1.99. All Mac &amp; Cheeses are served with a dinner roll.
@@ -704,7 +703,7 @@
             </div>
          </div> <!-- end of mac & cheese -->
 
-         <a href="#sweetsTitle"><h1 data-id="sweets" onclick="show(this);" id="sweetsTitle">SWEETS</h1></a>
+         <a href="#sweetsTitle"><h1 data-id="sweets" id="sweetsTitle">SWEETS</h1></a>
          <div id="sweets" class="MenuCat">
 
             <div class="row" id="sweetsRow">
@@ -718,43 +717,46 @@
          </div>
       </div> <!--end of menu-->
 
-    </div>
+    
 
-  <footer id="footer" class="row">
-     <div id="footerAddress" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-       <h2 style="margin-top: 0px;">WINDBAG SALOON</h2>
-       <div >
-          19 s Last Chance Gultch<br>
-          Helena, Mt.<br>
-          <a href="tel:4064433520">406.443.3520</a><br>
-          Hours of operation:<br>
-          11:00 am &ndash; Close.
-       </div>
-     </div>
-     <div id="map" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-    <script>
-          //46.586275, -112.039753
-      function initMap() {
-        var uluru = {lat: 46.586275, lng: -112.039753};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDid4rBUiSSRSR2livaYK4B7zaGkTsfx6c&callback=initMap">
-    </script>
-     </div>
-     <span>
-       site desing and hosting by <a href="http://www.sonichood.com">SonicHood.com</a>
-    </span>
-  </footer>
+        <div id="footer">
+              <div class="row">
+                 <div id="footerAddress" class=" col-sm-12 col-md-6 col-lg-6">
+                   <h2 style="margin-top: 0px;">WINDBAG SALOON</h2>
+                   <div >
+                      19 s Last Chance Gultch<br>
+                      Helena, Mt.<br>
+                      <a href="tel:4064433520">406.443.3520</a><br>
+                      Hours of operation:<br>
+                      11:00 am &ndash; Close.
+                   </div>
+                 </div>
+                
+                 <div id="mapContainer" class=" col-sm-12 col-md-6 col-lg-6">
+                      <div id="map"></div>
+                      <script>
+                        function initMap() {
+                          var uluru = {lat: 46.586275, lng: -112.039753};
+                          var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 4,
+                            center: uluru
+                          });
+                          var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                          });
+                        }
+                      </script>
+                      <script async defer
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDid4rBUiSSRSR2livaYK4B7zaGkTsfx6c&callback=initMap">
+                      </script>
+                 </div>
+              </div>
+           <span>
+             site desing and hosting by <a href="http://www.sonichood.com">SonicHood.com</a>
+          </span>
+        </div>
+  </div>
 </body>
 
 </html>

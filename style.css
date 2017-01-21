@@ -27,31 +27,31 @@ img {
    width: auto;
    height: auto;
 }
-footer {
+#footer {
    margin: 0px;
    margin-top: 50px;
    background-color: rgb(125,125,125);
+   max-width: 100%;
+   
+}
+#footer > div {
+      width: 100%;
+      max-width: 100%;
+}
 
-}
-footer > div {
-   display: inline-block;
-   width: 33%;
-   padding-left: 5%;
-   padding-right: 5%;
-   padding-top: 20px;
-   vertical-align: top;
-}
 #footerAddress {
    background-color: rgba(22, 22, 22, 0.3);
    text-align: left;
    height: 300px;
    padding: 80px;
+  
 }
 #map {
    height: 300px;
    background-color: rgba(55,55,55,0.3);
+   width: 100%;
 }
-footer > span {
+#footer > span {
    display: block;
    margin: 20px 0px 0px 0px;
    padding-bottom: 20px;
@@ -389,7 +389,9 @@ footer > span {
    }
 }
 @media (max-width: 991px) {
-
+#footerAddress {
+      padding: 50px;
+      }
    #menuContent > div,
    #aboutUs {
       margin-left: 40px;

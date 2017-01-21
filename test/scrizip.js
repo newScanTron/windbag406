@@ -28,13 +28,12 @@ const seven68 = 768;
 function bodyLoad() {
 
    $('#imageThing').parallax();
-   $('#soupSaladImage').parallax();
-   $('#wingsImage').parallax();
-   if (document.body.clientWidth < seven68)
-      hideByClass("MenuCat");
+
+   // if (document.body.clientWidth < seven68)
+    //   hideByClass("MenuCat");
 
 }
-window.addEventListener('resize', checkSize);
+// window.addEventListener('resize', checkSize);
 
 function hideByClass(className) {
 	var kids = document.getElementsByClassName(className);

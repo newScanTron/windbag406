@@ -729,14 +729,15 @@
           11:00 am &ndash; Close.
        </div>
      </div>
-     <div id="map">
-<div id="map"></div>
+     <div id="mapContainer">
+
+   
+    <div id="map"></div>
     <script>
-          //46.586275, -112.039753
       function initMap() {
         var uluru = {lat: 46.586275, lng: -112.039753};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
+          zoom: 4,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -746,7 +747,7 @@
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDid4rBUiSSRSR2livaYK4B7zaGkTsfx6c&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
      </div>
      <span>

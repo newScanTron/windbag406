@@ -51,6 +51,10 @@ img {
    background-color: rgba(55,55,55,0.3);
    width: 100%;
 }
+#mapContainer {
+      padding-left: 0px;
+      padding-right: 0px;
+}
 #footer > span {
    display: block;
    margin: 20px 0px 0px 0px;

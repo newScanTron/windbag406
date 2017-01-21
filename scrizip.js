@@ -13,13 +13,13 @@ $(function() {
     }
   });
   var stickyTop = $('#menuContent').offset().top;
-  $(window).on( 'scroll', function(){
-        if ($(window).scrollTop() >= stickyTop) {
-            $('#menuNav').css({display: "block", top: "0px"});
-        } else {
-            $('#menuNav').css({display: "none", top: "0px"});
-        }
-    });
+  // $(window).on( 'scroll', function(){
+  //       if ($(window).scrollTop() >= stickyTop) {
+  //           $('#menuNav').css({display: "block", top: "0px"});
+  //       } else {
+  //           $('#menuNav').css({display: "none", top: "0px"});
+  //       }
+  //   });
 });
 
 
@@ -34,7 +34,7 @@ function bodyLoad() {
       hideByClass("MenuCat");
 
 }
-window.addEventListener('resize', checkSize);
+// window.addEventListener('resize', checkSize);
 
 function hideByClass(className) {
 	var kids = document.getElementsByClassName(className);

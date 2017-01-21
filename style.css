@@ -66,6 +66,8 @@ footer > span {
 #aboutUs {
    padding-top: 20px;
    height: auto;
+   margin-left: 40px;
+   margin-right: 40px;
 
 }
 #aboutUs > div {
@@ -89,16 +91,16 @@ footer > span {
 }
 
 #imgDiv {
-   background-image: url(/images/signcolor.jpg);
+   background-image: url(../images/logo.png);
    height: 400px;
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
    background-position: 50% 50%;
 }
 
 #imageThing {
    margin-top: 0px;
-   height: 450px;
+   height: 400px;
    position: relative;
 }
 #nameTitle {
@@ -288,11 +290,11 @@ footer > span {
 #menuTitle {
    font-size: 64px;
    background-color: rgba(55,55,55,0.2);
-   color: #dddddd;
+   color: #333333;
    line-height: 1.5;
-   position: absolute;
+   /*position: absolute;
    top: 30%;
-   left: 0;
+   left: 0;*/
    width: 100%;
 }
 #menuTitle p {

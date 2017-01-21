@@ -166,6 +166,9 @@ footer > span {
    vertical-align: top;
    text-align: left;
 }
+
+
+
 #menuNav {
    display: none;
    position: fixed;
@@ -429,6 +432,10 @@ footer > span {
 }
 
 @media (max-width: 768px) {
+#menuContent i {
+   width: 100%;
+   max-width: 100%;
+}
    .hideMobile {
       display: none;
    }

@@ -28,9 +28,10 @@ img {
    height: auto;
 }
 footer {
+   margin: 0px;
    margin-top: 50px;
-   max-width: 100%;
    background-color: rgb(125,125,125);
+
 }
 footer > div {
    display: inline-block;

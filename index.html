@@ -65,7 +65,9 @@
       <div id="aboutUs" >
             <div class="row">
                <h1 id="title">THE WINDBAG SALOON</h1>
+
                <div class="col-sm-12 col-md-12 col-lg-7" id="imgDiv">
+
 
                </div>
                <div class="col-sm-12 col-md-12 col-lg-5" style="text-align: left;">
@@ -89,16 +91,16 @@
       </div>
       <div id="menuContent" class="contentDiv">
             <div id="menuNav">
-               <a href="#startersTitle">starters</a>
-               <a href="#favoritesTitle">favorites</a>
-               <a href="#soupSaladTitle">soup/salad</a>
-               <a href="#sandwichesTitle">sandwiches</a>
-               <a href="#wingsTitle">wings</a>
-               <a href="#burgersTitle">burgers</a>
-               <a href="#macTitle">mac &amp; cheese</a>
-               <a href="#sweetsTitle">sweets</a>
+               <a href="#startersTitle" onclick="show(this);" data-id='starters'>starters</a>
+               <a href="#favoritesTitle" onclick="show(this);" data-id='favorites'>favorites</a>
+               <a href="#soupSaladTitle" onclick="show(this);" data-id='soupSalad'>soup/salad</a>
+               <a href="#sandwichesTitle" onclick="show(this);" data-id='sandwiches'>sandwiches</a>
+               <a href="#wingsTitle" onclick="show(this);" data-id='wings'>wings</a>
+               <a href="#burgersTitle" onclick="show(this);" data-id='burgers'>burgers</a>
+               <a href="#macTitle" onclick="show(this);" data-id='mac'>mac &amp; cheese</a>
+               <a href="#sweetsTitle" onclick="show(this);" data-id='sweets'>sweets</a>
             </div>
-         <a href="#startersTitle"><h1 data-id="starters" onclick="show(this);" id="startersTitle">STARTERS</h1></a>
+         <a href="#startersTitle"><h1 data-id="starters" onclick="show('startersTitle');" id="startersTitle">STARTERS</h1></a>
          <div id="starters" class="MenuCat">
             <div class="row" id="startsRow1">
                <div class="MenuItem col-md-4 col-sm-6" id="nachos">
@@ -718,9 +720,9 @@
 
     </div>
 
-  <footer id="footer">
-     <div id="footerAddress">
-       <h2>WINDBAG SALOON</h2>
+  <footer id="footer" class="row">
+     <div id="footerAddress" class="col-lg-6 col-md-6 col-sm-12">
+       <h2 style="margin-top: 0px;">WINDBAG SALOON</h2>
        <div >
           19 s Last Chance Gultch<br>
           Helena, Mt.<br>
@@ -729,8 +731,8 @@
           11:00 am &ndash; Close.
        </div>
      </div>
-     <div id="map">
-<div id="map"></div>
+     <div id="map" class="col-lg-6 col-md-6 col-sm-12">
+
     <script>
           //46.586275, -112.039753
       function initMap() {

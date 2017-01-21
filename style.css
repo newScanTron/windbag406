@@ -35,15 +35,16 @@ footer {
 footer > div {
    display: inline-block;
    width: 33%;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 20px;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 20px;
    vertical-align: top;
 }
 #footerAddress {
    background-color: rgba(22, 22, 22, 0.3);
    text-align: left;
-   padding: 20px;
+   height: 300px;
+   padding: 80px;
 }
 #map {
    height: 300px;

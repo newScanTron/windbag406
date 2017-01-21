@@ -63,8 +63,12 @@ function checkSize() {
 }
 
 function show(ele) {
+   console.log(typeof ele);
    if (document.body.clientWidth > seven68)
       return;
+
+   if (typeof ele == 'string')
+      console.log("whe are a string");
    var dataId = ele.dataset.id;
    var kids = document.getElementsByClassName("MenuCat");
 	for (var i = 0; i < kids.length; ++i) {

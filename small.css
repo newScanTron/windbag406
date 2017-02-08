@@ -1,11 +1,87 @@
+#facebookLink {
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-weight: 100;
+}
+#facebookLink > a > p {
+		margin: 0px;
+}
+#facebookLink > a {
+		text-decoration: none;
+		color: white;
+		padding: 0px;
+		margin: 0px;
+}
+#nav {
+	background-color: white;
+	max-width: 100%;
+	height: 180px;
+	text-align: right;
+	padding-left: 10%;
+	position: relative;
+}
+#nav #logo {
+	position: absolute;
+	width: 200px;
+	 height: auto;
+	 padding: 5px;
+	 left: 40px;
+}
+#nav #addressContent {
+	position: absolute;
+	bottom: 10px;
+	left: 300px;
+
+}
+
+
+#nav > div {
+	position: absolute;
+	bottom: 0px;
+	right: 40px;
+	width: 100%;
+}
+#nav > div > div {
+	line-height: 24px;
+	font-size: 22px;
+	height: 50px;
+
+	display: inline-block;
+	padding: 20px;
+	color: #222222;
+	cursor: pointer;
+	vertical-align: baseline;
+}
+#nameTitle {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 25px 20px 15px 20px;
+}
+#nameTitle > h2 {
+	margin-top: 0px;
+}
 #aboutUs {
-   padding-top: 20px;
-   height: auto;
-   margin-left: 40px;
-   margin-right: 40px;
+	padding-top: 20px;
+	height: auto;
+	margin-left: 40px;
+	margin-right: 40px;
 
 }
 #aboutUs > div {
-     margin-left: 2%;
-   margin-right: 2%;
+	  margin-left: 2%;
+	margin-right: 2%;
+}
+#content {
+	max-width: 100%;
+	padding: 0px;
+	margin: auto;
+	background: transparent;
+}
+@media (max-width: 768px) {
+	.hideMobile {
+		display: none;
+	}
 }

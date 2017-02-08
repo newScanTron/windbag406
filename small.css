@@ -1,0 +1,11 @@
+#aboutUs {
+   padding-top: 20px;
+   height: auto;
+   margin-left: 40px;
+   margin-right: 40px;
+
+}
+#aboutUs > div {
+     margin-left: 2%;
+   margin-right: 2%;
+}

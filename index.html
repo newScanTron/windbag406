@@ -3,6 +3,24 @@
 
 <head>
 
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta name="description" content="The Windbag Saloon, is a Long time Helena establishment specilizing in Food and Drink." >
@@ -12,30 +30,13 @@
    <meta name="author" content="Chris Murphy">
    <title>Windbag Saloon</title>
    <!--style-->
-   <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
-   <link rel="stylesheet" type="text/css" href="bootstrap.css">
-   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <!--Scrips-->
-   <script src="/js/jquery-3.1.1.js"></script>
-   <script src="/js/parallax.js"></script>
-   <script src="scrizip.js"></script>
-   <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-     ga('create', 'UA-90319376-2', 'auto');
-     ga('send', 'pageview');
-
-   </script>
+<link rel="stylesheet" type="text/css" href="small.css">
 </head>
 
 <body onload="bodyLoad();">
    <div id="facebookLink">
       <a href="https://www.facebook.com/windbagsaloon/" target="_blank">
-      <p>Check Us Out On <strong>Facebook</strong> For Our <strong>Daily Specials and Upcoming Events. </strong>Click Here!</p>
+      <p>Check Us Out On <strong>Facebook</strong> <span class="hideMobile">For Our <strong>Daily Specials and Upcoming Events. </strong>Click Here!</span></p>
       </a>
    </div>
    <div id="nav">
@@ -53,11 +54,15 @@
 
    <div class="parallax-window" data-bleed="10" data-speed="0.2"  data-parallax="scroll" data-image-src="../images/front.png" id="imageThing">
       <div id="nameTitle">
-         <h2>WINDBAG SALOON</h2>
-         <div id="addressContent" class="">
+         <h2 class="hideMobile">WINDBAG SALOON</h2>
+         <div id="addressContent" style="float: left; text-align: left; margin-right: 20px;">
             19 s Last Chance Gultch<br>
             Helena, Mt.<br>
             <a href="tel:4064433520">406.443.3520</a>
+         </div>
+         <div style="text-align: left;">
+            11 &ndash; Close <br class="hideMobile">
+            Everyday
          </div>
       </div>
    </div>
@@ -66,7 +71,7 @@
             <div class="row">
                <h1 id="title">THE WINDBAG SALOON</h1>
 
-               <div class="col-sm-12 col-md-12 col-lg-7" id="imgDiv">
+               <div class="col-sm-12 col-md-12 col-lg-7" id="imgDiv" class="hideMobile">
 
                </div>
                <div class="col-sm-12 col-md-12 col-lg-5" style="text-align: left;">
@@ -738,7 +743,7 @@
                         function initMap() {
                           var uluru = {lat: 46.586275, lng: -112.039753};
                           var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 4,
+                            zoom: 16,
                             center: uluru
                           });
                           var marker = new google.maps.Marker({
@@ -759,4 +764,22 @@
   </div>
 </body>
 
+
 </html>
+   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!--Scrips-->
+   <script src="/js/jquery-3.1.1.min.js"></script>
+   <script src="/js/parallax.min.js"></script>
+   <script src="scrizip.js"></script>
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-90319376-2', 'auto');
+     ga('send', 'pageview');
+
+   </script>

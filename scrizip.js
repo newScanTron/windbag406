@@ -20,6 +20,7 @@ $(function() {
   //           $('#menuNav').css({display: "none", top: "0px"});
   //       }
   //   });
+  $('#imageThing').parallax();
 });
 
 
@@ -27,7 +28,7 @@ const seven68 = 768;
 
 function bodyLoad() {
 
-   $('#imageThing').parallax();
+   
    // $('#soupSaladImage').parallax();
    // $('#wingsImage').parallax();
    // if (document.body.clientWidth < seven68)

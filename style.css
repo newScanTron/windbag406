@@ -69,17 +69,7 @@ img {
 .SmallText {
    font-size: 16px !important;
 }
-#aboutUs {
-   padding-top: 20px;
-   height: auto;
-   margin-left: 40px;
-   margin-right: 40px;
 
-}
-#aboutUs > div {
-     margin-left: 2%;
-   margin-right: 2%;
-}
 #imageThing,
 #favoritesImage,
 #soupSaladImage,
@@ -150,7 +140,7 @@ img {
 
 #content {
    max-width: 100%;
-   padding: 0px 0px 40px 0px;
+   padding: 0px;
    margin: auto;
    background: transparent;
 }
@@ -441,10 +431,13 @@ img {
 }
 
 @media (max-width: 768px) {
-#menuContent i {
-   width: 100%;
-   max-width: 100%;
-}
+      #menuContent i {
+         width: 100%;
+         max-width: 100%;
+      }
+      #aboutUs {
+            margin: auto 10px;
+      }
    .hideMobile {
       display: none;
    }
@@ -453,5 +446,19 @@ img {
    }
    .MenuItem {
       min-height: 0px !important;
+      margin-top: 40px;
+   }
+   #imgDiv {
+         height: 280px;
+         display: none;
+   }
+   #imageThing {
+      height: 125px;
+   }
+   #nav #logo {
+      width: 100px;
+   }
+   #nav {
+         height: 100px;
    }
 }

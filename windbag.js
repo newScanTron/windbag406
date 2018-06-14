@@ -40,13 +40,13 @@ function RenderMenu(e) {
   var a = brunch;
   switch (e.dataset.name.toLowerCase()) {
     case "brunch":
-      console.log("we made a brunch switch"), a = brunch;
+      a = brunch;
       break;
     case "bar":
-      a = bar, console.log("we made a bar switch");
+      a = bar;
       break;
     case "kids":
-      a = kids, console.log("we made a kids switch");
+      a = kids;
       break;
     default:
       a = main
@@ -94,7 +94,7 @@ var _createClass = function() {
             r = e.desc.toString(),
             s = e.name.toString().trim(),
             i = e.price.toString();
-          console.log("price" + i), console.log("priceLength " + i.length), i.length > 0 && (i = "$" + i);
+
           var t = i.split(" "),
             c = "";
           if (t.length > 1 && "$sm" != t[0]) {
@@ -538,7 +538,7 @@ var _createClass = function() {
       price: "10.99"
     },{
       name: "brisket mac",
-      desc: "Shell pasta smothered in cheese sauce with Certified BBQ Brisket, bacon, red onions, & BBQ sauc",
+      desc: "Shell pasta smothered in cheese sauce with Certified BBQ Brisket, bacon, red onions, & BBQ sauce",
       price: "13.99"
     }, {
       name: "CHEESEBURGER mac",

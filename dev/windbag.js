@@ -43,9 +43,9 @@ function ProteinPower() {
                     "PICK YOUR PROTEIN"
                 ),
                 React.createElement("br", null),
-                "Italian Chicken Breast 9.99",
+                "Cage Free, Hormone Free Chicken Breast 10.49",
                 React.createElement("br", null),
-                "Certified Angus Beef Patty 9.99",
+                "Certified Angus Beef Patty 10.49",
                 React.createElement("br", null),
                 "Pesto Tuna Fillet 11.99",
                 React.createElement("br", null),
@@ -65,10 +65,10 @@ function ProteinPower() {
                 "Two of the following sides are included with your protein. A low-carb salad, seasonal mixed vegetables , cottage cheese, celery or soup.",
                 React.createElement("br", null),
                 "Add $1 for each additional side."
+                )
             )
-        )
-    );
-}
+        );
+    }
 
 var Menu = function (_React$Component) {
     _inherits(Menu, _React$Component);
@@ -118,12 +118,16 @@ var Menu = function (_React$Component) {
                 var classes = "";
                 var temp = v["desc"].toString();
                 var name = v["name"].toString().trim();
+                
                 var price = v["price"].toString();
+                
+                if (price.length > 0)
+                    price = "$" + price; 
 
                 var splitPrice = price.split(" ");
                 var addOnPrice = "";
 
-                if (splitPrice.length > 1 && splitPrice[0] != "sm") {
+                if (splitPrice.length > 1 && splitPrice[0] != "$sm") {
                     price = splitPrice[0];
                     for (var i = 1; i < splitPrice.length; i++) {
                         if (splitPrice[i]) addOnPrice += " " + splitPrice[i];
@@ -144,7 +148,7 @@ var Menu = function (_React$Component) {
 
                 return React.createElement(
                     "div",
-                    { key: v["name"], className: "MenuItem col-md-4 col-sm-6", itemProp: "MenuItem" },
+                    { key: v["name"], className: "MenuItem col-md-4 col-sm-6 col-xs-12", itemProp: "MenuItem" },
                     React.createElement(
                         "h4",
                         null,
@@ -340,7 +344,7 @@ var starters = {
         "desc": "Our own house-made enchiladas sliced into bites, deep-fried & served with our enchilada sauce, sour cream, & salsa.",
         "price": "8.99"
     }, {
-        "name": "sweet fries",
+        "name": "sweet potato fries",
         "desc": "Seasoned sweet fries with roasted red pepper aioli.",
         "price": "5.99"
     }, {
@@ -430,7 +434,7 @@ var soupSalad = {
     }, {
         "name": "buffalo chicken salad",
         "desc": "Seasonal greens with grilled or crispy chicken, red onions, tomatoes, carrots, bleu cheese crumbles, & croutons.  Served with a dinner roll.",
-        "price": "9.99"
+        "price": "10.99"
     }, {
         "name": "kicking kale",
         "desc": "Tender baby Kale topped with crunchy green apples, dried sweetened cranberries, toasted sunflower seeds, & grilled or fried chicken.  Served with poppy seed vinaigrette & a dinner roll.",
@@ -440,9 +444,9 @@ var soupSalad = {
         "desc": "Your choice of seasoned beef or chicken topped with cheddar cheese, tomatoes, onions, olives, black beans, red salsa, sour cream & ranch.  Served on mixed greens & garnished with tortilla strip chips.",
         "price": "9.99"
     }, {
-        "name": "Chinatown chicken",
-        "desc": "Mixed greens & Nappa cabbage mixed with water chestnuts, carrots, bell peppers, grilled or crispy chicken, & zesty Mandarin sauce.  Served with fried won tons.",
-        "price": "9.99"
+        "name": "salad wrap",
+        "desc": "Your choice of the following salads severed in a tortilla wrap: Buffalo Chicken, Caesar with Chicken, or Kicking Kale. Served with a your choice of side.",
+        "price": "10.99"
     }, {
         "name": "salad dressings",
         "desc": "Ranch, Bleu Cheese, Oil & Vinegar, 1000 Island, Balsamic Vinaigrette, Italian, Oriental, Feta Vinaigrette, or Poppy Seed Vinaigrette.",
@@ -472,7 +476,7 @@ var favorites = {
     }, {
         "name": "jimmy the greek's gyro",
         "desc": "A warm pita topped with seasoned beef, lettuce, tzatziki sauce, tomatoes, & feta cheese. Served with your choice of side.",
-        "price": "10.49"
+        "price": "10.99"
     }]
 };
 
@@ -496,7 +500,7 @@ var sandwiches = {
     }, {
         "name": "BLT",
         "desc": "Bacon, Lettuce, & tomato on your choice of wheat, sourdough, or rye with mayo. Add cheddar, Swiss, pepper jack, or mozzarella for 50¢",
-        "price": "8.99 Double Bacon 1.99"
+        "price": "9.49 Double Bacon 1.99"
     }, {
         "name": "1/2 sandwich & a side",
         "desc": "1/2 of a French Dip, Reuben, or BLT with choice of side.",
@@ -504,12 +508,20 @@ var sandwiches = {
     }, {
         "name": "buffalo chicken sando",
         "desc": "Crispy chicken dipped in our buffalo sauce & topped with bleu cheese crumbles. Served on a pretzel bun. ",
-        "price": "10.99"
+        "price": "11.49"
     }, {
         "name": "capital city club",
         "desc": "Black forest ham, turkey, bacon, lettuce, cheddar cheese & tomato on pita bread with mayo.",
-        "price": "10.99"
+        "price": "11.49"
     }, {
+        "name": "cajun tuna",
+        "desc": "Black forest ham, turkey, bacon, lettuce, cheddar cheese & tomato on pita bread with mayo.",
+        "price": "12.99"
+    },{
+        "name": "PESTO tuna",
+        "desc": "A 6oz. fillet topped with pesto. Served on a fresh Wheat Montana bun.",
+        "price": "12.99"
+    },{
         "name": "black & bleu chicken",
         "desc": "Grilled or fried chicken, peppered bacon & bleu cheese crumbles. Served on a pretzel bun.",
         "price": "10.99"
@@ -517,6 +529,10 @@ var sandwiches = {
         "name": "jameson bbq beef brisket",
         "desc": "Certified Angus Beef Brisket topped with coleslaw. Served on a pretzel bun.",
         "price": "12.99"
+    }, {
+        "name": "philly",
+        "desc": "Thinly sliced roast beef, grilled onions & peppers served on a hoagie and smothered with our signature cheese sauce. Double roast beef for 1.99",
+        "price": "10.99"
     }]
 };
 
@@ -524,7 +540,7 @@ var wings = {
     "name": "wings",
     "header": "All wings are served with carrots, celery & your choice of ranch or bleu cheese dressings. Wings are served on a bed of our fresh made chips.",
     "bonePrice": "on the bone (8) 10.99",
-    "lessPrice": "boneless (10) 9.99",
+    "lessPrice": "boneless (10) 10.99",
     "desc": "BREADED IN BEER, BACON & TABASCO! TOSS YOUR WINGS IN THE FOLLOWING SAUCES:",
     "items": [{
         "name": "buffalo",
@@ -539,10 +555,6 @@ var wings = {
         "desc": "A tangy Asian sauce.",
         "price": ""
     }, {
-        "name": "JAMESON BLACK BARREL MUSTARD",
-        "desc": "House-made mustard sauce infused with our favorite whiskey",
-        "price": ""
-    }, {
         "name": "HABANERO PLUM",
         "desc": "A sweet plum sauce with habanero flakes",
         "price": ""
@@ -551,8 +563,16 @@ var wings = {
         "desc": "You think you have the Gizzards? Caution our hottest sauce!",
         "price": ""
     }, {
-        "name": "HONEY SOY",
-        "desc": "A traditional soy sauce infused with honey",
+        "name": "garlic parmesan",
+        "desc": "A mild parmesan sauce infused with GARLIC.",
+        "price": ""
+    }, {
+        "name": "SRIRACHA WING SAUCE",
+        "desc": "What happens when traditional buffalo sauce marries Sriracha?",
+        "price": ""
+    }, {
+        "name": "korean",
+        "desc": "Not your mom’s teriyaki",
         "price": ""
     }]
 };
@@ -563,15 +583,15 @@ var burgers = {
     "items": [{
         "name": "CLASSIC BURGER",
         "desc": "Add cheddar, Swiss, mozzarella, or pepper jack for 50¢.",
-        "price": "9.99"
+        "price": "10.49"
     }, {
         "name": "MAC & CHEESE BURGER",
         "desc": "Topped with bacon chunks & pub mac & cheese.",
-        "price": "10.99"
+        "price": "11.49"
     }, {
         "name": "Rankin bacon cheese",
         "desc": "Topped with bacon & cheddar cheese.",
-        "price": "10.99"
+        "price": "11.49"
     }, {
         "name": "BULLOCK BURGER",
         "desc": "Topped with bacon & crumbled bleu cheese.",
@@ -579,11 +599,11 @@ var burgers = {
     }, {
         "name": "ROCKING RACICOT BURGER",
         "desc": "Topped with jalapeños, pepper jack, & sriracha mayo. Served on a pretzel bun.",
-        "price": "10.99"
+        "price": "11.49"
     }, {
         "name": "black beam",
         "desc": "Where’s the beef? Not here. A black bean burger topped with melted pepper jack cheese.",
-        "price": "9.99"
+        "price": "10.49"
     }, {
         "name": "GULCH BURGER",
         "desc": "Topped with Certified Angus Beef Brisket, Jameson BBQ sauce, grilled onions, & bleu cheese crumbles.",
@@ -591,7 +611,7 @@ var burgers = {
     }, {
         "name": "MUSHROOM SWISS BURGER",
         "desc": "Topped with mushrooms & Swiss.",
-        "price": "10.99"
+        "price": "11.49"
     }]
 };
 
@@ -601,15 +621,15 @@ var mac = {
     "items": [{
         "name": "classic",
         "desc": "Shell pasta smothered in cheese sauce.",
-        "price": "7.49"
+        "price": "8.49"
     }, {
         "name": "rocky crab mac",
         "desc": "Shell pasta smothered in cheese sauce with Rock Crab.  Double the crab for 3.99.",
-        "price": "11.49"
+        "price": "11.99"
     }, {
         "name": "black forest ham & broccoli",
         "desc": "Shell pasta smothered in cheese sauce with black forest ham & broccoli",
-        "price": "9.49"
+        "price": "9.99"
     }, {
         "name": "southern fried chicken mac",
         "desc": "Shell pasta smothered in cheese sauce with fried chicken & bacon.",
@@ -621,7 +641,7 @@ var mac = {
     }, {
         "name": "buffalo chicken mac",
         "desc": "Shell pasta smothered in cheese sauce with buffalo fried chicken & bacon.",
-        "price": "11.49"
+        "price": "10.99"
     }]
 };
 
@@ -633,14 +653,14 @@ var sweets = {
         "desc": "If your favorite food at the fair is funnel cake this dessert is for you! Funnel cakes cut into fries & topped with a caramel, chocolate drizzle. Add a scoop of Ice Cream for .99¢",
         "price": "5.99"
     }, {
-        "name": "last chance cookie",
-        "desc": "A giant chocolate chip cookie topped with three scoops of Ice Cream with a drizzle of chocolate & caramel.",
-        "price": "6.99"
+        "name": "the wookie",
+        "desc": "A deep-fried Wonton stuffed with cookie dough. Topped with a caramel & chocolate drizzle.",
+        "price": "5.99"
     }]
 };
 
 var main = '{ "name": "main","header": "", "menuCat": [ ' + JSON.stringify(starters) + ', ' + JSON.stringify(favorites) + ',' + JSON.stringify(protein) + ', ' + JSON.stringify(soupSalad) + ', ' + JSON.stringify(sandwiches) + ', ' + JSON.stringify(wings) + ', ' + JSON.stringify(burgers) + ', ' + JSON.stringify(mac) + ', ' + JSON.stringify(sweets) + ']}';
 var main = JSON.parse(main);
 
-var brunch = '{"name": "brunch", "header" : "Saturday & Sunday 10am to 1pm", "menuCat": [ ' + JSON.stringify(starters) + ',' + JSON.stringify(pubBreakfast) + ', ' + JSON.stringify(soupSalad) + ', ' + JSON.stringify(favorites) + ',' + JSON.stringify(protein) + ', ' + JSON.stringify(sandwiches) + ', ' + JSON.stringify(wings) + ', ' + JSON.stringify(burgers) + ', ' + JSON.stringify(sweets) + ']}';
+var brunch = '{"name": "brunch", "header" : "Saturday & Sunday 10am to 1pm", "menuCat": [ ' + JSON.stringify(starters) + ',' + JSON.stringify(pubBreakfast) + ', '  + JSON.stringify(favorites) + ',' + JSON.stringify(protein) + ', '+ JSON.stringify(soupSalad) + ', ' + JSON.stringify(sandwiches) + ', ' + JSON.stringify(wings) + ', ' + JSON.stringify(burgers) + ', ' + JSON.stringify(sweets) + ']}';
 var brunch = JSON.parse(brunch);

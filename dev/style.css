@@ -118,11 +118,6 @@ img {
 }
 
 
-
-.MenuItem > p > i {
-	text-align: left;
-	width: 100% !important;
-}
 #starters .MenuItem {
 	min-height: 200px;
 }
@@ -145,6 +140,12 @@ img {
 #pubmaccheese .MenuItem {
 	min-height: 164px;
 }
+
+/*bar menu style*/
+#specialtydrinks .MenuItem {
+	min-height: 80px;
+}
+
 
 .MenuItem > h4 {
 	margin-top: 0px;
@@ -280,10 +281,7 @@ img {
 }
 
 @media (max-width: 768px) {
-		#menuContent i {
-			width: 100%;
-			max-width: 100%;
-		}
+		
 #nameTitle {
 	position: static;
 }
@@ -298,7 +296,11 @@ img {
 		margin-top: 40px;
 	}
 	#menuContent > div {
-     margin-left: 5px;
-    margin-right: 5px; 
-}s
+     margin-left: 10px;
+    margin-right: 10px; 
+}
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
 }

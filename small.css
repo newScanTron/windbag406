@@ -80,8 +80,30 @@
 	margin: auto;
 	background: transparent;
 }
+@media (max-width: 991px) {
+	#aboutUs {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+}
 @media (max-width: 768px) {
 	.hideMobile {
 		display: none;
+	}
+			#aboutUs {
+				margin: auto 10px;
+		}
+		#imgDiv {
+			height: 280px;
+			display: none;
+	}
+	#imageThing {
+		height: 85px;
+	}
+	#nav #logo {
+		width: 100px;
+	}
+	#nav {
+			height: 100px;
 	}
 }
